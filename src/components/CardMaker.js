@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import Axios from 'axios';
+import './CardMaker.scss'
+import {Card} from 'semantic-ui-react'
 
 
 function CardMaker(props) {
@@ -10,7 +11,7 @@ console.log(props);
 return (
 
  
- <div>
+ <Card className = 'card-maker'>
    <h2>
      {props.title}
    </h2>
@@ -19,8 +20,9 @@ return (
    <p>
 {props.explanation}
      </p>
-   </div>  
+   </Card>  
 );
 }
+
 
 export default CardMaker; 
